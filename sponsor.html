@@ -4,6 +4,29 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Cornell Design Build Fly</title>
 <link href="styles.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
 <body>
@@ -19,8 +42,8 @@
 <!--orange block to increase height of nav bar-->
 <div class="orangeBacking" style="height:15px"></div>
  
-<div class="orangeBacking">    
-    <div class="navbar"><a href="index.html"><img src="images/navbar/homepage.png"/></a><a href="sponsor.html"><img src="images/navbar/sponsorbenefits.png"/></a><a href="students.html"><img src=	"images/navbar/prospectivestudents.png"/></a><a href="http://www.youblisher.com/p/955817-Cornell-University/" target="_blank"><img src="images/navbar/sponsorshippacket.png"/></a><a href="#contactIDsponsor"><img src="images/navbar/contactus.png"/></a>
+<div class="orangeBacking" >    
+    <div class="navbar" style= align="center"><a href="index.html"><img src="images/navbar/homepage.png"/></a><a href="sponsor.html"><img src="images/navbar/sponsorbenefits.png"/></a><a href="students.html"><img src=	"images/navbar/prospectivestudents.png"/></a><a href="http://www.youblisher.com/p/955817-Cornell-University/" target="_blank"><img src="images/navbar/sponsorshippacket.png"/></a><a href="#contactIDsponsor"><img src="images/navbar/contactus.png"/></a>
     </div> <!-- end .navbar -->
   </div> <!-- end .orangeBacking -->
   
@@ -97,19 +120,22 @@
         	  <li>Small corporate logo displayed at competition and on our team website</li>
         	  <li>Small corporate logo displayed on t-shirts, posters and other promotional products</li>
         	  <li>Opportunity for info-session hosting and access to resume book</li>
-            </ul>
+          </ul>
         </div>
         <div style="width:206px; text-align:center;  padding: 0px 25px; float:left" >
        	  <img src="images/sponsorpage/bronzesponsor.png"/>
           <ul>
         	  <li>Acknowledgement of your contribution at competition and on our team website</li>
         	  <li>Personal thank you letter from the Cornell DBF team</li>
-            </ul>
+          </ul>
         </div>
-        
-<div style="clear:left; padding-top:50px" >
-        	<p>*Sponsorship can take the form of a cash donation or the equivalent in products or services.</p>
-        </div>
+<div style="clear:left; padding-top:20px" >  
+  <!--Rollover "Sponsorship Packet" Button-->
+<a href="http://www.youblisher.com/p/955817-Cornell-University/" target="_blank" onmouseover="MM_swapImage('Image20','','images/sponsorpage/SponsorshipPacketOrange.png',1)" onmouseout="MM_swapImgRestore()"><img src="images/sponsorpage/SponsorshipPacket.png" name="Image20"  border="0" id="Image20" /></a>
+<a href="https://www.giving.cornell.edu/give/?gifttype=21&comments=Cornell%20Design%20Build%20Fly%28Fund%20Code%20472%29&amt=" target="_blank" onmouseover="MM_swapImage('Image21','','images/sponsorpage/SponsorUsOrange.png',1)" onmouseout="MM_swapImgRestore()"><img src="images/sponsorpage/SponsorUs.png" name="Image21"  border="0" id="Image21" /></a>
+	</div> 
+  <p>*Sponsorship can take the form of a cash donation or the equivalent in products or services.</p>
+</div>
     </div>
 </div> <!-- end .contentbox1 -->
 
